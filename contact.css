@@ -1,0 +1,108 @@
+/* Contact page CSS */
+
+/* Body with clean font and light background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling - same as your events page */
+nav.navbar {
+  background-color: #004080;  /* Dark blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-section .logo-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+nav.navbar .menu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav.navbar .menu a:hover {
+  color: #ffd700; /* Gold highlight on hover */
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: 50px auto 80px auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Form heading */
+h2 {
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+/* Form labels */
+.form-label {
+  font-weight: 600;
+  color: #004080;
+}
+
+/* Inputs and textarea */
+.form-control {
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #004080;
+  box-shadow: 0 0 5px rgba(0, 64, 128, 0.3);
+  outline: none;
+}
+
+/* Submit button */
+.btn-primary {
+  background-color: #004080;
+  border-color: #004080;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #002f5a;
+  border-color: #002f5a;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+/* Footer placeholder spacing */
+body::after {
+  content: "";
+  display: block;
+  height: 100px; /* To avoid footer overlap if footer is fixed */
+}

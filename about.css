@@ -1,0 +1,79 @@
+/* General Page Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  background: #fff;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #003366;
+  border-radius: 4px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 12px 25px;
+  color: white;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.menu a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Heading Styles */
+h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-top: 30px;
+  color: #004080;
+  font-size: 1.2rem;
+}
+
+/* Paragraph and List Styles */
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+}

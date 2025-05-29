@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KheloBharat - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-section">
+      <span class="logo-text">KheloBharat</span>
+    </div>
+    <div class="menu">
+      <a href="auth.html">Signup & Login</a>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="form.html">Form</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Welcome Section -->
+  <div class="container mt-5 text-center">
+    <h1>Welcome to KheloBharat</h1>
+    <!-- Add below the welcome paragraph in index.html -->
+        <div class="container mt-4">
+            <p>
+                Sports play a very important role in the growth of our nation. India has made good progress in sports over the years, and now it's time to show our talent to the world. At <strong>KheloBharat</strong>, we want to inspire young players by giving them the best facilities and training so they can reach their full potential.
+            </p>
+            <p>
+                The Khelo India program helps build strong sports culture starting from local levels by supporting many sports activities and competitions. Various government bodies like the Sports Authority of India and Ministry of Youth Affairs and Sports work together to develop sports infrastructure, promote women’s sports, encourage rural and tribal games, and provide opportunities for people with disabilities.
+            </p>
+            <p>
+                Our goal is to make India a strong sports nation where everyone can participate and excel.
+            </p>
+        </div>
+
+  </div>
+
+  <div id="video-container"></div>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    &copy; 2025 KheloBharat
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript to Add Background Video -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const video = document.createElement("video");
+      video.src = "background_video.mp4";
+      video.autoplay = true;
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.setAttribute("id", "bg-video");
+      document.getElementById("video-container").appendChild(video);
+    });
+  </script>
+
+</body>
+</html>

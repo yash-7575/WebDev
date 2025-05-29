@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #ff6b35;
+    --secondary-color: #004e89;
+    --accent-color: #1a659e;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--primary-color);
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-left: 5px solid var(--primary-color);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.scoreboard {
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.team-score {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.chart-container {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.btn-khelo {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border: none;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.btn-khelo:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
+.navbar-khelo {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.progress-custom {
+    height: 8px;
+    border-radius: 4px;
+}

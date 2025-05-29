@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KheloBharat - Sports Dashboard</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-section">
+            <span class="logo-text">KheloBharat</span>
+        </div>
+        <div class="menu">
+            <a href="auth.html">Signup & Login</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="form.html">Form</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="dashboard-header" style="margin-top: 76px;">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Sports Dashboard</h1>
+            <p class="lead">Live statistics from KheloBharat</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-users fa-2x me-3"></i>
+                        <div>
+                            <h4 class="mb-0">4,340</h4>
+                            <small>Total Participants</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-play-circle fa-2x me-3"></i>
+                        <div>
+                            <h4 class="mb-0">55</h4>
+                            <small>Active Matches</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-trophy fa-2x me-3"></i>
+                        <div>
+                            <h4 class="mb-0">6</h4>
+                            <small>Sports Categories</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div class="container" id="dashboard">
+        <div class="row">
+            <!-- Sport Statistics Cards -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-baseball-ball fa-2x me-3" style="color: #ff6b35"></i>
+                                    <div>
+                                        <h6 class="mb-0">Cricket</h6>
+                                        <small class="text-muted">15 matches</small>
+                                    </div>
+                                </div>
+                                <div class="stat-number">1,250</div>
+                            </div>
+                            <div class="progress progress-custom">
+                                <div class="progress-bar" style="width: 83%; background-color: #ff6b35"></div>
+                            </div>
+                            <small class="text-muted">Participation: 83%</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-futbol fa-2x me-3" style="color: #1a659e"></i>
+                                    <div>
+                                        <h6 class="mb-0">Football</h6>
+                                        <small class="text-muted">12 matches</small>
+                                    </div>
+                                </div>
+                                <div class="stat-number">890</div>
+                            </div>
+                            <div class="progress progress-custom">
+                                <div class="progress-bar" style="width: 59%; background-color: #1a659e"></div>
+                            </div>
+                            <small class="text-muted">Participation: 59%</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-basketball-ball fa-2x me-3" style="color: #f39c12"></i>
+                                    <div>
+                                        <h6 class="mb-0">Basketball</h6>
+                                        <small class="text-muted">8 matches</small>
+                                    </div>
+                                </div>
+                                <div class="stat-number">650</div>
+                            </div>
+                            <div class="progress progress-custom">
+                                <div class="progress-bar" style="width: 43%; background-color: #f39c12"></div>
+                            </div>
+                            <small class="text-muted">Participation: 43%</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-table-tennis fa-2x me-3" style="color: #27ae60"></i>
+                                    <div>
+                                        <h6 class="mb-0">Tennis</h6>
+                                        <small class="text-muted">6 matches</small>
+                                    </div>
+                                </div>
+                                <div class="stat-number">420</div>
+                            </div>
+                            <div class="progress progress-custom">
+                                <div class="progress-bar" style="width: 28%; background-color: #27ae60"></div>
+                            </div>
+                            <small class="text-muted">Participation: 28%</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-swimmer fa-2x me-3" style="color: #3498db"></i>
+                                    <div>
+                                        <h6 class="mb-0">Swimming</h6>
+                                        <small class="text-muted">4 matches</small>
+                                    </div>
+                                </div>
+                                <div class="stat-number">380</div>
+                            </div>
+                            <div class="progress progress-custom">
+                                <div class="progress-bar" style="width: 25%; background-color: #3498db"></div>
+                            </div>
+                            <small class="text-muted">Participation: 25%</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-running fa-2x me-3" style="color: #8e44ad"></i>
+                                    <div>
+                                        <h6 class="mb-0">Badminton</h6>
+                                        <small class="text-muted">10 matches</small>
+                                    </div>
+                                </div>
+                                <div class="stat-number">750</div>
+                            </div>
+                            <div class="progress progress-custom">
+                                <div class="progress-bar" style="width: 50%; background-color: #8e44ad"></div>
+                            </div>
+                            <small class="text-muted">Participation: 50%</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match Scores -->
+                <div class="card mb-4" id="scores">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-broadcast-tower me-2"></i>Recent Match Results</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="scoreboard">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <h6 class="mb-1">Mumbai Indians</h6>
+                                    <div class="team-score">185</div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <small class="d-block text-warning">Cricket</small>
+                                    <small class="text-muted">Completed</small>
+                                    <small class="d-block">20/20 Overs</small>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h6 class="mb-1">Chennai Super Kings</h6>
+                                    <div class="team-score">142</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scoreboard">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <h6 class="mb-1">FC Goa</h6>
+                                    <div class="team-score">2</div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <small class="d-block text-warning">Football</small>
+                                    <small class="text-muted">Full Time</small>
+                                    <small class="d-block">90 Minutes</small>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h6 class="mb-1">Bengaluru FC</h6>
+                                    <div class="team-score">1</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scoreboard">
+                            <div class="row align-items-center">
+                                <div class="col-4 text-center">
+                                    <h6 class="mb-1">Delhi Capitals</h6>
+                                    <div class="team-score">89</div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <small class="d-block text-warning">Basketball</small>
+                                    <small class="text-muted">Game Over</small>
+                                    <small class="d-block">4 Quarters</small>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <h6 class="mb-1">Punjab Kings</h6>
+                                    <div class="team-score">94</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="chart-container" id="analytics">
+                    <h4 class="mb-4"><i class="fas fa-chart-line me-2"></i>Analytics</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <canvas id="participationChart" width="400" height="300"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <canvas id="performanceChart" width="400" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Weather Widget -->
+                <div class="weather-widget mb-4">
+                    <h5><i class="fas fa-cloud-sun me-2"></i>Weather</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="display-6 fw-bold">28°C</div>
+                                <small>Partly Cloudy</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <small class="d-block">📍 Mumbai, India</small>
+                            <small class="d-block">💧 Humidity: 65%</small>
+                            <small class="d-block">💨 Wind: 12 km/h</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="stat-card">
+                    <h5><i class="fas fa-history me-2"></i>Recent Activities</h5>
+                    <div class="mb-2 p-2 bg-light rounded" style="border-left: 3px solid #ff6b35;">
+                        <small>🏏 Cricket match: Mumbai Indians won by 43 runs</small>
+                        <small class="text-muted d-block">2 hours ago</small>
+                    </div>
+                    <div class="mb-2 p-2 bg-light rounded" style="border-left: 3px solid #1a659e;">
+                        <small>⚽ Football: FC Goa scored! Current 2-1</small>
+                        <small class="text-muted d-block">3 hours ago</small>
+                    </div>
+                    <div class="mb-2 p-2 bg-light rounded" style="border-left: 3px solid #f39c12;">
+                        <small>🏀 Basketball timeout - Score: 89-94</small>
+                        <small class="text-muted d-block">4 hours ago</small>
+                    </div>
+                    <div class="mb-2 p-2 bg-light rounded" style="border-left: 3px solid #27ae60;">
+                        <small>🎾 Tennis set completed - 6-4 games</small>
+                        <small class="text-muted d-block">5 hours ago</small>
+                    </div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div class="stat-card">
+                    <h5><i class="fas fa-tachometer-alt me-2"></i>Today's Stats</h5>
+                    <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-users me-2 text-primary"></i>
+                            <span>Active Players</span>
+                        </div>
+                        <strong class="text-primary">2,450</strong>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-play me-2 text-primary"></i>
+                            <span>Matches Today</span>
+                        </div>
+                        <strong class="text-primary">55</strong>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-trophy me-2 text-primary"></i>
+                            <span>Tournaments</span>
+                        </div>
+                        <strong class="text-primary">12</strong>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3 p-2 bg-light rounded">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-eye me-2 text-primary"></i>
+                            <span>Viewers</span>
+                        </div>
+                        <strong class="text-primary">18,500</strong>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="stat-card">
+                    <h5><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary" onclick="showExportMessage()">
+                            <i class="fas fa-download me-2"></i>Export Stats
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
